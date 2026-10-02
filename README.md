@@ -8,7 +8,7 @@ Ride Along puts a companion in your cab. You talk to it by voice with a push-to-
 
 ### **[⬇ Download Ride Along (ready to play, app + plugins)](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest/download/RideAlong-win-x64.zip)**
 
-Also on [Nexus Mods](NEXUS_URL) (plugins only, plus `RideAlong.exe` from the [releases page](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest)).
+Also on [Nexus Mods](https://www.nexusmods.com/eurotrucksimulator2/mods/260) (plugins only, plus `RideAlong.exe` from the [releases page](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest)).
 
 ---
 
