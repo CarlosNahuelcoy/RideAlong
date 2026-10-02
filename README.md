@@ -1,12 +1,14 @@
 # Ride Along
 
+![Ride Along](images/cover.png)
+
 **An AI co-driver for Euro Truck Simulator 2 and American Truck Simulator.**
 
 Ride Along puts a companion in your cab. You talk to it by voice with a push-to-talk button, and it talks back. It comments on the trip, reacts to what happens on the road, remembers your past jobs and can work the cab controls you ask for.
 
-> This repository hosts the **Ride Along app (`RideAlong.exe`)** and its documentation. The game plugins are downloaded from **[Nexus Mods](NEXUS_URL)**. You need both.
+### **[⬇ Download Ride Along (ready to play, app + plugins)](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest/download/RideAlong-win-x64.zip)**
 
-**[Download RideAlong.exe (latest release)](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest)**
+Also on [Nexus Mods](NEXUS_URL) (plugins only, plus `RideAlong.exe` from the [releases page](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest)).
 
 ---
 
@@ -30,22 +32,22 @@ Ride Along puts a companion in your cab. You talk to it by voice with a push-to-
 
 ## Installation
 
-1. **Download the plugins** from [Nexus Mods](NEXUS_URL) and extract the zip anywhere (for example `Documents`). You get a `RideAlong` folder with a `Plugins` folder inside.
-2. **Download `RideAlong.exe`** from the [latest release](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest).
-3. **Put `RideAlong.exe` in that `RideAlong` folder**, next to `Plugins`:
+1. **Download [`RideAlong-win-x64.zip`](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest/download/RideAlong-win-x64.zip)** and extract it anywhere (for example `Documents`). You get this folder:
    ```
    RideAlong\
-     RideAlong.exe      <- from GitHub
-     Plugins\           <- from Nexus
+     RideAlong.exe
+     Plugins\
        ridealong_input.dll
        scs-telemetry.dll
      README.txt
    ```
-4. **Close the game** and run `RideAlong.exe`.
+   Keep `Plugins` next to `RideAlong.exe`.
+2. **Coming from Nexus Mods?** That zip has only the plugins. Download `RideAlong.exe` from the [latest release](https://github.com/CarlosNahuelcoy/RideAlong/releases/latest) and put it in the extracted `RideAlong` folder, next to `Plugins`.
+3. **Close the game** and run `RideAlong.exe`.
    Windows may show *"Windows protected your PC"* because the app is not code-signed. Click **More info**, then **Run anyway**.
-5. On the **Home** page, click **Prepare game**. Ride Along finds your ETS2/ATS installs in your Steam libraries and copies both plugins into `<game>\bin\win_x64\plugins\`.
-6. **Sign in to your AI provider.** With Player2, a browser window opens the first time and you approve the login there. You don't need the Player2 desktop app. To use another provider, open **AI providers** and paste your API key.
-7. **Start the game as usual.** When the game shows the *advanced SDK features* notice, accept it: that is the plugins loading.
+4. On the **Home** page, click **Prepare game**. Ride Along finds your ETS2/ATS installs in your Steam libraries and copies both plugins into `<game>\bin\win_x64\plugins\`.
+5. **Sign in to your AI provider.** With Player2, a browser window opens the first time and you approve the login there. You don't need the Player2 desktop app. To use another provider, open **AI providers** and paste your API key.
+6. **Start the game as usual.** When the game shows the *advanced SDK features* notice, accept it: that is the plugins loading.
 
 ### Manual plugin install
 
@@ -87,7 +89,7 @@ Chat, voice and listening can each use a different provider. API keys are stored
 
 ## Troubleshooting
 
-- **"Prepare game" says a plugin was not found.** `RideAlong.exe` must be in the folder that contains `Plugins` (step 3).
+- **"Prepare game" says a plugin was not found.** `RideAlong.exe` must be in the folder that contains `Plugins` (steps 1 and 2).
 - **The game doesn't show the SDK notice / no telemetry.** Check that both DLLs are in `<game>\bin\win_x64\plugins\` and that you run the 64-bit game.
 - **It doesn't hear me.** Pick your microphone under **Voice & audio** and check the push-to-talk binding.
 - **"Insufficient credits".** Your AI account ran out of credits (Player2 joules or your provider's balance).
