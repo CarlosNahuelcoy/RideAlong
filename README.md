@@ -21,7 +21,7 @@ Also on [Nexus Mods](https://www.nexusmods.com/eurotrucksimulator2/mods/260) (pl
 - **Memory and trip journal.** It remembers past conversations and keeps a log of every job (route, cargo, pay, fines, damage) per driver profile.
 - **Casual chatter.** Spontaneous remarks while you drive, as often or as rarely as you like.
 - **Your choice of AI.** Player2 (default, free account), OpenAI, OpenRouter, Google Gemini, NovelAI or any OpenAI-compatible server (Ollama, LM Studio...). Free offline Windows voices are also available.
-- **English and Spanish interface.** The companion talks in English, Spanish, Portuguese, French, Italian and German.
+- **In your language.** The app comes in English, Español, Deutsch, Français, Italiano, Português (Brasil), Polski, Русский, Türkçe and 中文. The companion talks and listens in 23 languages.
 
 ## Requirements
 
@@ -73,6 +73,21 @@ Good to know:
 - **Subtitles** are drawn over the game window. They work in windowed and borderless fullscreen; exclusive fullscreen can hide them.
 - Language settings are separate: the app language, the language the companion replies in, the language you speak and its voice.
 
+### Languages
+
+**App language**: the selector at the bottom of the sidebar (English, Español, Deutsch, Français, Italiano, Português (Brasil), Polski, Русский, Türkçe and 中文).
+
+**Companion language**: **Voice & audio > Co-driver language**. The companion replies in it and understands you in it. This is separate from the app language.
+
+| Voice | Languages |
+|---|---|
+| Player2 voice (works right away) | English (US and UK), Español, Português (Brasil), Français, Italiano, 中文, 日本語, हिन्दी |
+| Windows voice (install it once) | Deutsch, Nederlands, Polski, Čeština, Русский, Українська, Türkçe, Ελληνικά, Svenska, Norsk, Dansk, Suomi, 한국어 |
+
+Languages marked **Windows voice** in the list need a free Windows voice for that language, because Player2 has none yet. Install it as shown in [Talking in German](#talking-in-german) (same steps for any language). Until then the companion speaks with an English voice. OpenAI voices also speak most of these languages.
+
+**Other language…** is for languages that are not in the list: type the language name in English (`Romanian`) and its two-letter code (`ro`). Player2 can't understand these languages, so pick **OpenAI** for speech recognition in **AI providers**.
+
 ### Talking in German
 
 Pick **Deutsch** under **Voice & audio**. The companion then replies in German and understands you in German.
@@ -102,7 +117,7 @@ Chat, voice and listening can each use a different provider. API keys are stored
 
 - **"Prepare game" says a plugin was not found.** `RideAlong.exe` must be in the folder that contains `Plugins` (steps 1 and 2).
 - **The game doesn't show the SDK notice / no telemetry.** Check that both DLLs are in `<game>\bin\win_x64\plugins\` and that you run the 64-bit game.
-- **It speaks German with an English accent, or not at all.** Install a German Windows voice (see [Talking in German](#talking-in-german)) and restart Ride Along.
+- **It speaks German (or another language) with an English accent.** Install a Windows voice for that language (see [Talking in German](#talking-in-german)) and restart Ride Along.
 - **It doesn't hear me.** Pick your microphone under **Voice & audio** and check the push-to-talk binding.
 - **"Insufficient credits".** Your AI account ran out of credits (Player2 joules or your provider's balance).
 - **No subtitles in game.** Switch the game to windowed or borderless fullscreen.
