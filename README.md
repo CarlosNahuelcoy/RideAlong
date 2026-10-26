@@ -21,7 +21,7 @@ Also on [Nexus Mods](https://www.nexusmods.com/eurotrucksimulator2/mods/260) (pl
 - **Memory and trip journal.** It remembers past conversations and keeps a log of every job (route, cargo, pay, fines, damage) per driver profile.
 - **Casual chatter.** Spontaneous remarks while you drive, as often or as rarely as you like.
 - **Your choice of AI.** Player2 (default, free account), OpenAI, OpenRouter, Google Gemini, NovelAI or any OpenAI-compatible server (Ollama, LM Studio...). Free offline Windows voices are also available.
-- **English and Spanish interface.** The companion can talk in other languages too.
+- **English and Spanish interface.** The companion talks in English, Spanish, Portuguese, French, Italian and German.
 
 ## Requirements
 
@@ -73,6 +73,17 @@ Good to know:
 - **Subtitles** are drawn over the game window. They work in windowed and borderless fullscreen; exclusive fullscreen can hide them.
 - Language settings are separate: the app language, the language the companion replies in, the language you speak and its voice.
 
+### Talking in German
+
+Pick **Deutsch** under **Voice & audio**. The companion then replies in German and understands you in German.
+Player2 has no German voices yet, so Ride Along speaks with a German **Windows voice** instead:
+
+1. Click **Speech settings** under the language (or open Windows **Settings > Time & language > Speech**).
+2. **Add voices**, pick a German voice (for example *Deutsch (Deutschland)*) and wait for it to install.
+3. Restart Ride Along. It uses that voice automatically while Player2 stays your voice provider.
+
+OpenAI voices also speak German, if you prefer them.
+
 ## AI providers
 
 | Provider | Chat | Voice | Listening |
@@ -91,6 +102,7 @@ Chat, voice and listening can each use a different provider. API keys are stored
 
 - **"Prepare game" says a plugin was not found.** `RideAlong.exe` must be in the folder that contains `Plugins` (steps 1 and 2).
 - **The game doesn't show the SDK notice / no telemetry.** Check that both DLLs are in `<game>\bin\win_x64\plugins\` and that you run the 64-bit game.
+- **It speaks German with an English accent, or not at all.** Install a German Windows voice (see [Talking in German](#talking-in-german)) and restart Ride Along.
 - **It doesn't hear me.** Pick your microphone under **Voice & audio** and check the push-to-talk binding.
 - **"Insufficient credits".** Your AI account ran out of credits (Player2 joules or your provider's balance).
 - **No subtitles in game.** Switch the game to windowed or borderless fullscreen.
